@@ -2,7 +2,6 @@ package test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.SearchPage;
 import page.SearchResultsPage;
 import page.SearchResultsSecondPage;
 
@@ -11,7 +10,7 @@ import java.util.List;
 public class SearchTest extends BaseTest{
     String searchTerm = "Selenium";
 
-    @Test()
+    @Test
     public void basicSearchTest(){
         int elementCountFirstPage = 9;
         int elementCountSecondPage = 10;
@@ -41,7 +40,7 @@ public class SearchTest extends BaseTest{
 
         for (String searchResult : searchResultsListSecondPage) {
 
-            Assert.assertTrue(searchResult.contains(searchTerm),
+            Assert.assertTrue(searchResult.toLowerCase().contains(searchTerm.toLowerCase()),
                     "SearchTerm Selenium" + searchTerm + "not found in:\n" + searchResult);
         }
 

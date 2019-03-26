@@ -9,3 +9,8 @@
 [JDK]:<https://www.oracle.com/technetwork/java/javase/downloads/index.html>
 [Idea]:<https://www.jetbrains.com/idea/>
 [Chromedriver]:<http://chromedriver.chromium.org/downloads>
+
+
+### How to run tests via command line
+
+- 

@@ -27,9 +27,9 @@ public class SearchResultsSecondPage {
     }
 
     public boolean isPageLoaded() {
-        return signInButton.isDisplayed();
-                //&& driver.getCurrentUrl().contains("https://www.google.com/search")
-               // && driver.getTitle().contains("Selenium");
+        return signInButton.isDisplayed()
+                && driver.getCurrentUrl().contains("https://www.google.com/search")
+                && driver.getTitle().contains("Selenium");
     }
 
     public int getSearchResultsCount() {
